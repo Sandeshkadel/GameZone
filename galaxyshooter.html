@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galaxy Shooter</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #12122a, #343458);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #00ffcc;
+      padding: 30px 10px;
+      text-align: center;
+    }
+    #backButton {
+      background: #ff4444;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff4444;
+      transition: background-color 0.3s ease;
+      margin-bottom: 20px;
+    }
+    #backButton:hover {
+      background-color: #ff2222;
+    }
+    #gameContainer {
+      max-width: 520px;
+      margin: 0 auto;
+      background: #12122a;
+      border-radius: 20px;
+      box-shadow: 0 0 25px #00ffcc inset;
+      padding: 20px;
+    }
+    #scoreboard {
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      color: #ffcc00;
+      text-shadow: 0 0 10px #ffcc00;
+    }
+    #gameCanvas {
+      background: #12122a;
+      border-radius: 15px;
+      display: block;
+      margin: 0 auto 20px;
+      box-shadow: 0 0 20px #00ffcc inset;
+    }
+    #replayButton {
+      background: #ffcc00;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 15px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #12122a;
+      box-shadow: 0 0 15px #ffcc00;
+      transition: background-color 0.3s ease;
+    }
+    #replayButton:hover {
+      background: #ffc107;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="backButton">⬅ Back to Game Menu</button>
+
+  <div id="gameContainer">
+    <div id="scoreboard">Score: 0</div>
+    <canvas id="gameCanvas" width="500" height="400"></canvas>
+    <button id="replayButton">Replay</button>
+  </div>
+
+  <script src="galaxyshooterjs.js"></script>
+  <script>
+    document.getElementById('backButton').addEventListener('click', () => {
+      window.location.href = 'game';
+    });
+  </script>
+</body>
+</html>

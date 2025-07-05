@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Balloon Shooter</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #0a0a1e, #1e1e3f);
+      color: #00ffcc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 30px 10px;
+    }
+    #backButton {
+      background: #ff4444;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff4444;
+      transition: background-color 0.3s ease;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+    #backButton:hover {
+      background-color: #ff2222;
+    }
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #ffcc00;
+      text-shadow: 0 0 10px #ffc107;
+    }
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+      text-shadow: 0 0 10px #00ffcc;
+    }
+    #startButton {
+      background: #ffcc00;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 30px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #12122a;
+      box-shadow: 0 0 15px #ffcc00;
+      transition: background-color 0.3s ease;
+      margin-bottom: 20px;
+    }
+    #startButton:hover {
+      background: #ffc107;
+    }
+    #gameArea {
+      width: 90%;
+      max-width: 900px;
+      height: 480px;
+      background: #111;
+      margin: 0 auto;
+      border-radius: 15px;
+      box-shadow: 0 0 30px #00ffcc inset;
+      position: relative;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="backButton">⬅ Back to Game Menu</button>
+
+  <h1>Balloon Shooter</h1>
+  <p>Score: <span id="score">0</span></p>
+  <button id="startButton">Start Game</button>
+  <div id="gameArea"></div>
+
+  <script src="balloonjs.js"></script>
+  <script>
+    document.getElementById('backButton').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>

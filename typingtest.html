@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Typing Test</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 50px 15px;
+    }
+    #sentence {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 25px;
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffcc;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    input {
+      width: 80%;
+      max-width: 600px;
+      padding: 15px 10px;
+      font-size: 1.3rem;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      background: #222;
+      color: #00ffcc;
+      box-shadow: 0 0 10px #00ffcc inset;
+      transition: box-shadow 0.3s ease;
+      text-align: center;
+      user-select: none;
+    }
+    input:focus {
+      box-shadow: 0 0 20px #00ffcc;
+      background: #111;
+    }
+    #time {
+      margin-top: 25px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ffcc00;
+      text-shadow: 0 0 8px #ffcc00;
+    }<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Typing Test</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 50px 15px;
+    }
+    #backButton {
+      background: #ff4444;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff4444;
+      transition: background-color 0.3s ease;
+      margin-bottom: 20px;
+    }
+    #backButton:hover {
+      background-color: #ff2222;
+    }
+    #sentence {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 25px;
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffcc;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    input {
+      width: 80%;
+      max-width: 600px;
+      padding: 15px 10px;
+      font-size: 1.3rem;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      background: #222;
+      color: #00ffcc;
+      box-shadow: 0 0 10px #00ffcc inset;
+      transition: box-shadow 0.3s ease;
+      text-align: center;
+      user-select: none;
+    }
+    input:focus {
+      box-shadow: 0 0 20px #00ffcc;
+      background: #111;
+    }
+    #time {
+      margin-top: 25px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ffcc00;
+      text-shadow: 0 0 8px #ffcc00;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="backButton">⬅ Back to Game Menu</button>
+
+  <p id="sentence">Loading sentence...</p>
+  <input type="text" id="typingInput" autocomplete="off" spellcheck="false" />
+  <p id="time"></p>
+
+  <script src="typingtest.js"></script>
+  <script>
+    document.getElementById('backButton').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>
+
+  </style>
+</head>
+<body>
+  <p id="sentence">Loading sentence...</p>
+  <input type="text" id="typingInput" autocomplete="off" spellcheck="false" />
+  <p id="time"></p>
+
+  <script src="typingtest.js"></script>
+</body>
+</html>

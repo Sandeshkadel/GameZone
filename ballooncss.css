@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+#gameArea {
+    position: relative;
+    width: 400px;
+    height: 600px;
+
+    border: 2px solid #333;
+    overflow: hidden;
+    background-color: #e0f7fa;
+    margin-top: 20px;
+}
+
+.balloon {
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.balloon:hover {
+    background-color: darkred;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
